@@ -32,7 +32,7 @@ function HeroImage(){
       <div className="grid-item-1">
         <h1>Brew Amazing Coffee</h1>
         <p className="hero-p">
-          Learn to <strong> brew </strong> world-class coffee at home without confusing yourself.
+          Learn to <strong>brew</strong> world-class coffee at home without confusing yourself.
           <br/>
           {isMobile ? <br/> : ''}
           Click subscribe for free emails that will sharpen your coffee skills

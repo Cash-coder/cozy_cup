@@ -51,6 +51,9 @@ h1 {
     margin-bottom: 1.5em;
     font-size: 1.5em;
 }
+.hero-p strong{
+    margin-left: unset;
+}
 
 .hero-image {
     background-size: cover;
@@ -136,7 +139,8 @@ h1 {
         color: #f1eaea;
         font-weight: bold;
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+        margin-top: 10px;
     }
 
     .hero-btn.insta {
