@@ -2,24 +2,56 @@
 
 body {
     background-color: #f2f5fa;
+    line-height: 1.5;
 }
 .two-columns-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-item-0:before {
+    position: relative;
+    z-index: 1;
+}
+
+.grid-item-1:after{
+    position: relative;
+    z-index: 2;
 }
 
 h1 {
     font-family: 'Rubik', -apple-system, sans-serif ;
     font-weight: 700;
-    font-size: 3.5rem;
+    font-size: 3.5em;
     color: #273338;
+    line-height: 1.2em
 }
 
 .hero-block {
     margin-left: 0;
+    background-color: #e8e8e8;
+    padding: 60px 0 40px ;
+    position: relative;
+    z-index: 1;
 }
 
 .hero-p {
     color:#273338;
+    margin-bottom: 1.5em;
+    font-size: 20px;
+}
+
+.hero-image{
+    background-image: url("https://www.homegrounds.co/wp-content/uploads/2019/10/banner1-1.png");
+    background-size: cover;
+    display: flex;
+    width:100%;
+    height:100%;
+    margin-right: -40px;
+}
+.image-content {
+    width:100%;
+    height:100%;
 }
 
 .hero-btn {
@@ -28,22 +60,71 @@ h1 {
     align-items:center;
     /*flex-flow:column;*/
     font-family: karla, sans-serif;
-    font-size:18px;
+    font-size: 24px;
     font-weight: 700;
-    height: 10px;
+    /*height: 10px;*/
     line-height: 10px;
     text-align:center;
     color: #fff;
     background-color: #e65;
-    padding: 15px;
+    padding: 25px 30px;
     border-radius: 7px;
     border: 1px solid #e6512b;
     margin-right: 15px;
+    white-space: nowrap;
+}
+.hero-btn:hover {
+    background-color: unset;
+    color: #e6512b;
 }
 
-.hero-btn.insta{
+.hero-btn.insta {
     background-color: unset;
     color: #594F4F;
 }
+.hero-btn.insta:hover {
+    background-color: #594F4F;
+    color: white;
+}
 
+.buttons-container {
+    display: flex;
+}
 
+@media (max-width: 768px){
+    .two-columns-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-block {
+        padding: 40px 0 20px;
+        background-image: url("https://www.homegrounds.co/wp-content/uploads/2019/10/banner1-1.png");
+        background-size: contain;
+        background-position: left;
+        background-repeat: no-repeat;
+        z-index: 2;
+        box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+    }
+
+    .hero-p {
+        font-size: 18px;
+        color: #ffffff;
+        z-index: 5;
+        margin-left: 20px;
+    }
+
+    .hero-btn {
+        padding: 15px 20px;
+        font-size: 18px;
+        color: #ffffff;
+    }
+    .hero-btn.insta {
+        color: #ffffff;
+    }
+
+    h1 {
+        /*z-index: 5;*/
+        margin-left:20px;
+        color: #f1eaea;
+    }
+}
