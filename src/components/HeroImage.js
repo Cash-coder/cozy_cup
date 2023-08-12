@@ -23,7 +23,9 @@ function HeroImage(){
       <div className="grid-item-0">
         <div className="hero-image">
           <div className="image-content">
-            {isMobile ? '' : <img src="https://www.homegrounds.co/wp-content/uploads/2019/10/banner1-1.png" alt="coffe brew" className="hero-image-content" />}
+            {isMobile ? '' :
+              <img src="https://www.homegrounds.co/wp-content/uploads/2019/10/banner1-1.png"
+                   alt="coffe brew" className="hero-image-content" />}
           </div>
         </div>
       </div>

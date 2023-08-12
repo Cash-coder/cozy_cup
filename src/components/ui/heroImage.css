@@ -10,61 +10,70 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 
-.grid-item-0{
+.grid-item-0 {
     position: relative;
     z-index: 1;
 }
-.grid-item-1{
+
+.grid-item-1 {
     position: relative;
     z-index: 2;
-    margin-left: -20px;
 }
 
 h1 {
-    font-family: 'Rubik', -apple-system, sans-serif ;
+    font-family: 'Rubik', -apple-system, sans-serif;
     font-weight: 700;
     font-size: 4.5em;
     /*color: #273338;*/
-    color : #805f55;
+    color: #805f55;
     line-height: 1.2em
 }
 
 .hero-block {
-    margin-left: 0;
+    /*margin-left: 0;*/
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 100%;
     background-color: #e8e8e8;
-    padding: 60px 0 40px ;
+    padding: 60px 0 40px;
     position: relative;
     z-index: 1;
 }
 
+.grid-item-1 * {
+    margin-left: 20px;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
 .hero-p {
-    color:#273338;
+    color: #273338;
     margin-bottom: 1.5em;
     font-size: 1.5em;
 }
 
-.hero-image{
+.hero-image {
     background-size: cover;
     display: flex;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
     margin-right: -60px;
 }
 
 .hero-image-content {
-    width:150%;
-    height:auto;
+    width: 150%;
+    height: auto;
 }
 
 .hero-btn {
     display: inline-flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     font-family: karla, sans-serif;
     font-size: 1.5em;
     font-weight: 700;
     line-height: 10px;
-    text-align:center;
+    text-align: center;
     color: #fff;
     background-color: #e65;
     padding: 25px 30px;
@@ -73,6 +82,7 @@ h1 {
     margin-right: 15px;
     white-space: nowrap;
 }
+
 .hero-btn:hover {
     background-color: unset;
     color: #e6512b;
@@ -82,6 +92,7 @@ h1 {
     background-color: unset;
     color: #594F4F;
 }
+
 .hero-btn.insta:hover {
     background-color: #594F4F;
     color: white;
@@ -91,7 +102,7 @@ h1 {
     display: flex;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .two-columns-container {
         grid-template-columns: 1fr;
     }
@@ -103,7 +114,7 @@ h1 {
         background-position: left;
         background-repeat: no-repeat;
         z-index: 2;
-        box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .2);
     }
 
     .hero-p {
@@ -114,18 +125,27 @@ h1 {
         line-height: 1;
     }
 
+    .buttons-container {
+        display: flex;
+        flex-direction: column;
+    }
+
     .hero-btn {
         padding: 15px 20px;
         font-size: 1.2em;
         color: #f1eaea;
         font-weight: bold;
+        display: block;
+        margin-bottom: 10px;
     }
+
     .hero-btn.insta {
         color: #f1eaea;
+        display: block;
     }
 
     h1 {
-        margin-left:20px;
+        margin-left: 20px;
         color: #f1eaea;
     }
 }
