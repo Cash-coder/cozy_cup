@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik:ital,wght@0,700;1,400&display=swap');
+
+body {
+    background-color: #f2f5fa;
+}
+.two-columns-container {
+    display: flex;
+}
+
+h1 {
+    font-family: 'Rubik', -apple-system, sans-serif ;
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: #273338;
+}
+
+.hero-block {
+    margin-left: 0;
+}
+
+.hero-p {
+    color:#273338;
+}
+
+.hero-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items:center;
+    /*flex-flow:column;*/
+    font-family: karla, sans-serif;
+    font-size:18px;
+    font-weight: 700;
+    height: 10px;
+    line-height: 10px;
+    text-align:center;
+    color: #fff;
+    background-color: #e65;
+    padding: 15px;
+    border-radius: 7px;
+    border: 1px solid #e6512b;
+    margin-right: 15px;
+}
+
+.hero-btn.insta{
+    background-color: unset;
+    color: #594F4F;
+}
+
+
