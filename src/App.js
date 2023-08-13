@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import HeroImage from "./components/HeroImage";
 import SiteHeader from "./components/SiteHeader";
-
+import HeaderTest from "./components/HeaderTest";
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
 
 
       <SiteHeader />
+      <HeaderTest />
       <HeroImage />
 
       {/*<header className="App-header">*/}

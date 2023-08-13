@@ -4,9 +4,12 @@
     display: flex;
 }
 
+ /* Logo */
  .site-logo img {
     width: 5em;
 }
+
+/* Main navigation bar */
 .main-nav {
     display:block;
     height:50px;
@@ -21,8 +24,9 @@
 }
 .main-nav ul li {
     display: inline-block;
+    position: relative;
 }
-.main-nav li a {
+.main-nav ul li a {
     display: inline-block;
     text-align:center;
     padding: 14px 16px;
@@ -30,4 +34,26 @@
 }
 .main-nav li a:hover{
     color: #44ada8;
+}
+
+/* Dropdown menu from main navigation bar*/
+.dropdown-content {
+    display:none;
+    position:absolute;
+    background-color: #f9f9f9;
+    z-index: 1;
+}
+
+.main-nav li.dropdown:hover .dropdown-content:hover {
+    display: block;
+}
+.dropdown-content {
+    display: block;
+}
+.dropdown-content li a {
+    padding: 10px;
+}
+
+.dropdown-content:hover {
+    background-color: #ddd;
 }

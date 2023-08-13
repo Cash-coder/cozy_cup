@@ -56,6 +56,7 @@ h1 {
     height:auto;
 }
 
+/* Calls to Action */
 .hero-btn {
     display: inline-flex;
     justify-content: center;
@@ -83,7 +84,7 @@ h1 {
     color: #594F4F;
 }
 .hero-btn.insta:hover {
-    background-color: #594F4F;
+    background-color: #805f55;
     color: white;
 }
 

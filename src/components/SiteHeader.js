@@ -13,13 +13,13 @@ export default function SiteHeader() {
           alt="site logo by vecteezy"/>
       </div>
       <nav className='main-nav'>
-        <ul>
+        <ul className='main-ul'>
           <li className="dropdown">
             <a href="#">Tools</a>
-            <ul className="dropdown-content">
-              <li> <a href="#">Coffee Grinder</a> </li>
-              <li> <a href="#"> Coffee Compass</a> </li>
-            </ul>
+              <ul className="dropdown-content">
+                <li> <a href="#">Coffee Grinder</a> </li>
+                <li> <a href="#"> Coffee Compass</a> </li>
+              </ul>
           </li>
           <li><a href="#">Coffee Beans</a></li>
           <li><a href="#">Gear</a></li>
