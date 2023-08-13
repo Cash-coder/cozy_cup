@@ -1,8 +1,36 @@
 import React from 'react';
 import './ui/siteHeader.css';
-
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function SiteHeader() {
+
+  // Dummy Data
+  const subMenus = {
+    tools: {
+      id: 0,
+      title: 'Tools',
+      submenuItems: [
+        {
+          id: 0,
+          title: 'Coffee Grinder',
+          url: '#',
+        },
+        {
+          id: 1,
+          title: 'Coffee Compass',
+          url: '#',
+        },
+      ],
+    },
+    recipes: {
+      id: 1,
+      title: 'Recipes',
+      submenuItems: [
+        // Add your recipe submenu items here
+      ],
+    },
+  };
 
   return (
     <div className='site-header'>
@@ -15,9 +43,17 @@ export default function SiteHeader() {
         <ul className='main-ul'>
           <li className="dropdown">
             <a className='dropdown'>Tools</a>
+            <span className="dropdown dropdown-toggle-icon">
+                <FontAwesomeIcon icon={faChevronDown}/>
+            </span>
             <div className="dropdown-content">
-                 <a href="#">Coffee Grinder</a>
-                 <a href="#">Coffee Compass</a>
+              {subMenus.tools.submenuItems.map((subMenu) =>(
+                <a
+                  key={subMenu.id}
+                  href={subMenu.url}>
+                  {subMenu.title}
+                </a>
+              ))}
             </div>
           </li>
           <li><a href="#">Coffee Beans</a></li>
