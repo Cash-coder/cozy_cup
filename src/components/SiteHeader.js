@@ -7,7 +7,7 @@ export default function SiteHeader() {
 
   return (
     <div className='site-header'>
-      <div className="site-logo">
+      <div className="site-logo aaa">
         <img
           src="https://static.vecteezy.com/system/resources/previews/000/585/220/large_2x/coffee-cup-logo-template-vector-icon-design.jpg"
           alt="site logo by vecteezy"/>
