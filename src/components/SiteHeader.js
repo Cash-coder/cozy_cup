@@ -4,10 +4,9 @@ import './ui/siteHeader.css';
 
 export default function SiteHeader() {
 
-
   return (
     <div className='site-header'>
-      <div className="site-logo aaa">
+      <div className="site-logo">
         <img
           src="https://static.vecteezy.com/system/resources/previews/000/585/220/large_2x/coffee-cup-logo-template-vector-icon-design.jpg"
           alt="site logo by vecteezy"/>
@@ -15,11 +14,11 @@ export default function SiteHeader() {
       <nav className='main-nav'>
         <ul className='main-ul'>
           <li className="dropdown">
-            <a href="#">Tools</a>
-              <ul className="dropdown-content">
-                <li> <a href="#">Coffee Grinder</a> </li>
-                <li> <a href="#"> Coffee Compass</a> </li>
-              </ul>
+            <a className='dropdown'>Tools</a>
+            <div className="dropdown-content">
+                 <a href="#">Coffee Grinder</a>
+                 <a href="#">Coffee Compass</a>
+            </div>
           </li>
           <li><a href="#">Coffee Beans</a></li>
           <li><a href="#">Gear</a></li>
