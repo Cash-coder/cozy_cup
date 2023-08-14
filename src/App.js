@@ -1,6 +1,7 @@
 import './App.css';
 import HeroImage from "./components/HeroImage";
 import SiteHeader from "./components/SiteHeader";
+import BestCoffeeBrands from "./components/BestCoffeeBrands";
 
 
 // General: code standards, best practices, weird things I did and how to do it better
@@ -20,6 +21,7 @@ export default function App() {
 
       <SiteHeader />
       <HeroImage />
+      <BestCoffeeBrands />
 
     </div>
   );
