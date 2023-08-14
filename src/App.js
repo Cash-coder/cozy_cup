@@ -2,7 +2,7 @@ import './App.css';
 import HeroImage from "./components/HeroImage";
 import SiteHeader from "./components/SiteHeader";
 import BestCoffeeBrands from "./components/BestCoffeeBrands";
-
+import LearnIconsGrid from "./components/LearnIconsGrid";
 
 // General: code standards, best practices, weird things I did and how to do it better
 // Why I can't change the font weight ? siteHeader.css 40 font-weight: 400;
@@ -10,6 +10,7 @@ import BestCoffeeBrands from "./components/BestCoffeeBrands";
 // nav menu: how to change color on hoover of both the icon AND the text, not one or the other
 // fix responsive issue in hero image, buttons and p getting cut in mobile
 // Adjust header widht: my content is full widht, theirs not
+// slide animation for mobile menu
 
 // continue
 // burger menu
@@ -22,6 +23,7 @@ export default function App() {
       <SiteHeader />
       <HeroImage />
       <BestCoffeeBrands />
+      <LearnIconsGrid />
 
     </div>
   );

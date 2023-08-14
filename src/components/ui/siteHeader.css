@@ -96,8 +96,8 @@
 {
     display: block;
     position: relative;
-    top: 20px;
-    /*left: 200px;*/
+    top: 25px;
+    margin-right: 40px;
 
     z-index: 3;
 
@@ -136,9 +136,7 @@
     -webkit-touch-callout: none;
 }
 
-/*
- * Just a quick hamburger
- */
+/* burger icon */
 #menuToggle span
 {
     display: block;
@@ -147,10 +145,10 @@
     margin-bottom: 5px;
     position: relative;
 
-    background: #cdcdcd;
+    background: black; /* give color to burger menu lines */
     border-radius: 3px;
 
-    z-index: 1;
+    z-index: 2;
 
     transform-origin: 4px 0px;
 
@@ -159,73 +157,66 @@
     opacity 0.55s ease;
 }
 
-#menuToggle span:first-child
-{
-    transform-origin: 0% 0%;
-}
+/* animations menu toggle */
+/*#menuToggle span:first-child*/
+/*{*/
+/*    transform-origin: 0% 0%;*/
+/*}*/
 
-#menuToggle span:nth-last-child(2)
-{
-    transform-origin: 0% 100%;
-}
+/*#menuToggle span:nth-last-child(2)*/
+/*{*/
+/*    transform-origin: 0% 100%;*/
+/*}*/
 
-/*
- * Transform all the slices of hamburger
- * into a crossmark.
- */
+
+/* animation make an X after click burger menu */
 #menuToggle input:checked ~ span
 {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
     background: #232323;
 }
-
-/*
- * But let's hide the middle one.
- */
+/* hide the middle span line to have 2 lines instead of 3  */
 #menuToggle input:checked ~ span:nth-last-child(3)
 {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-/*
- * Ohyeah and the last one should go the other direction
- */
+
 #menuToggle input:checked ~ span:nth-last-child(2)
 {
     transform: rotate(-45deg) translate(0, -1px);
 }
 
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
+/* when burger clicked display this */
+.menu-visible
 {
-    display: none;
-    position: absolute;
-    width: 300px;
-    margin: -10px 0 0 -150px;
-    padding: 50px;
-    padding-top: 125px;
+    display: block;
+    position: fixed;
+    right: 0;
 
-    background: #ededed;
+    padding: 50px;
+    line-height: 40px;
+    background: #fdfdfd;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
 
+    /* to stop flickering of text in safari */
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
-
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
+.menu-hidden {
+    display: none;
+}
 
-#menu li
+.menu-visible a li
 {
     padding: 10px 0;
-    font-size: 22px;
+    font-size: 1.5em;
+    font-family: var(--primary-font-family)
 }
 
 /*

@@ -1,11 +1,12 @@
 import './ui/siteHeader.css'
-import React from "react";
+import React, {useState} from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import useMobileDetect from './hooks/useMobileDetect';
 
 export default function SiteHeader() {
 
+  const [isMenuToggled, setIsMenuToggled] = useState(false)
   const isMobile = useMobileDetect();
 
   // Dummy Data
@@ -62,14 +63,19 @@ export default function SiteHeader() {
     </nav>
   )
 
+  // toggle burger menu for mobile
+  function handleMenuToggle() {
+    setIsMenuToggled(!isMenuToggled)
+  }
+
   const mobileHeader = (
     <nav role="navigation">
       <div id="menuToggle">
-        <input type="checkbox" />
+        <input type="checkbox" onClick={handleMenuToggle}/>
         <span></span>
         <span></span>
         <span></span>
-        <ul id="menu">
+        <ul className={isMenuToggled ? "menu-visible" : 'menu-hidden'}>
           <a href="#"><li>Home</li></a>
           <a href="#"><li>About</li></a>
           <a href="#"><li>Info</li></a>
