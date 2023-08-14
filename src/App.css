@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Karla&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik:ital,wght@0,700;1,400&display=swap');
 
+:root {
+    --primary-font-color: black;
+    --primary-font-family: Rubik;
+    --secondary-hoover-font-color: #44ada8;
+    --h2-section-background-color: #f2f5fa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: karla, sans-serif;
     font-size: 18px;

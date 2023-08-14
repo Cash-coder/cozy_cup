@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik:ital,wght@0,700;1,400&display=swap');
 
-body {
-    background-color: #f2f5fa;
-    line-height: 1.5;
-}
 
 .two-columns-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .grid-item-0 {
@@ -26,7 +25,10 @@ h1 {
     font-size: 4.5em;
     /*color: #273338;*/
     color: #805f55;
-    line-height: 1.2em
+    line-height: 1.2em;
+
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .hero-block {
@@ -41,16 +43,20 @@ h1 {
 }
 
 .grid-item-1 * {
-    margin-left: 20px;
     box-sizing: border-box;
-    max-width: 100%;
+    width: 100%;
+    margin-left: 20px;
+    /*max-width: 100%;*/
 }
 
 .hero-p {
     color: #273338;
     margin-bottom: 1.5em;
     font-size: 1.5em;
+    width: 100%;
+    box-sizing: border-box;
 }
+
 .hero-p strong{
     margin-left: unset;
 }
@@ -83,7 +89,7 @@ h1 {
     padding: 25px 30px;
     border-radius: 7px;
     border: 1px solid #e6512b;
-    margin-right: 15px;
+    margin-right: 5em;
     white-space: nowrap;
 }
 
@@ -104,8 +110,11 @@ h1 {
 
 .buttons-container {
     display: flex;
+    width: 100%;
+    max-width: 100%;
 }
 
+/*  ---- Responsive ---- */
 @media (max-width: 768px) {
     .two-columns-container {
         grid-template-columns: 1fr;
@@ -125,23 +134,34 @@ h1 {
         font-size: 1.1em;
         color: #f1eaea;
         z-index: 5;
-        margin-left: 20px;
         line-height: 1;
+        box-sizing: border-box;
+        width: 100%;
+        /*margin-left: 20px;*/
     }
 
     .buttons-container {
         display: flex;
         flex-direction: column;
+
+        width: 100%;
+        max-width: 100%;
     }
 
     .hero-btn {
-        padding: 15px 20px;
+        /*padding: 15px 1px;*/
         font-size: 1.2em;
         color: #f1eaea;
         font-weight: bold;
-        display: block;
+        /*display: block;*/
+
+
         margin-bottom: 15px;
         margin-top: 10px;
+        text-align: center;
+        max-width: 100%;
+        /*margin-right: 25em;*/
+        padding: 15px;
     }
 
     .hero-btn.insta {

@@ -1,22 +1,24 @@
 import './ui/heroImage.css';
 import React, {useState, useEffect} from "react";
+import useMobileDetect from "./hooks/useMobileDetect";
 
 function HeroImage(){
 
-  const [isMobile, setIsMobile] = useState(false);
+  // const [isMobile, setIsMobile] = useState(false);
+  //
+  // useEffect( () => {
+  //   function handleResize(){
+  //     setIsMobile(window.innerWidth <= 768)
+  //   }
+  //   handleResize()
+  //   window.addEventListener('resize', handleResize)
+  //
+  //   return () => {
+  //     window.removeEventListener('resize', handleResize)
+  //   };
+  // }, []);
 
-  useEffect( () => {
-    function handleResize(){
-      setIsMobile(window.innerWidth <= 768)
-    }
-    handleResize()
-    window.addEventListener('resize', handleResize)
-
-    return () => {
-      window.removeEventListener('resize', handleResize)
-    };
-  }, []);
-
+  const isMobile = useMobileDetect();
 
   return (
     <div className="hero-block two-columns-container">

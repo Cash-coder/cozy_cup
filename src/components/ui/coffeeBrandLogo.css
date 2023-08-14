@@ -1,16 +1,41 @@
-.coffee-brand-logo {
-    max-width: 200px;
-    margin-right: 20px;
+.featured-brands-container {
+    display: block;
+    width: 100%;
+    margin-top: 5em;
+    overflow-x: hidden;
+    /*background-color: var(--h2-section-background-color);*/
+    /*background-color: #fff;*/
+}
+
+.featured-brands-container h2 {
+    color: black;
+    text-align: center;
+    font-family: var(--primary-font-family);
+    line-height: 50px;
 }
 
 .logos-container {
     display: flex;
+    flex-wrap: wrap; /* Allow logos to wrap to new lines if needed */
     justify-content: center;
+    margin-top: 1em;
+    box-sizing: border-box; /* Include padding in the max-width calculation */
 }
+.coffee-brand-logo {
+    max-width: 250px;
+    box-sizing: border-box;
+    width: 100%;
+    /*margin-right: 5em;*/
+    /*padding: 3vw;*/
+    /*margin: 1vw;*/
+}
+
 
 .logo-list {
     display: flex;
     list-style:none;
     padding: 0;
-    margin: 0;
+    justify-content: center;
+    /*box-sizing: border-box;*/
 }
+

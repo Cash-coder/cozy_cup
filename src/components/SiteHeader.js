@@ -1,7 +1,8 @@
-import React from 'react';
-import './ui/siteHeader.css';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import './ui/siteHeader.css'
+import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+
 
 export default function SiteHeader() {
 
@@ -37,14 +38,16 @@ export default function SiteHeader() {
       <div className="site-logo">
         <img
           src="https://static.vecteezy.com/system/resources/previews/000/585/220/large_2x/coffee-cup-logo-template-vector-icon-design.jpg"
-          alt="site logo by vecteezy"/>
+          alt="site logo by vecteezy"
+        />
       </div>
       <nav className='main-nav'>
+        {}
         <ul className='main-ul'>
           <li className="dropdown">
             <a className='dropdown'>Tools</a>
             <span className="dropdown dropdown-toggle-icon">
-                <FontAwesomeIcon icon={faChevronDown}/>
+                <FontAwesomeIcon icon={faChevronDown} />
             </span>
             <div className="dropdown-content">
               {subMenus.tools.submenuItems.map((subMenu) =>(
