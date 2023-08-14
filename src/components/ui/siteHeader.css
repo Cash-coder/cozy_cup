@@ -1,0 +1,95 @@
+:root {
+    --primary-font-color: black;
+    --primary-font-family: Rubik;
+    --secondary-hoover-font-color: #44ada8;
+}
+
+.site-header {
+    background-color: #fff;
+    display: flex;
+}
+
+ /* ---- Logo ---- */
+ .site-logo img {
+    width: 5em;
+}
+
+/* ---- Main navigation bar ---- */
+.main-nav {
+    display:block;
+    height:50px;
+    line-height: 50px;
+    /*background-color: ;*/
+}
+.main-nav ul {
+    list-style: none;
+    padding:0;
+    margin: 0;
+}
+.main-nav ul li:not(.dropdown) {
+    display: inline-block;
+    position: relative;
+}
+.main-nav .main-ul li {
+    text-align:center;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+.main-nav .main-ul li a {
+    color: var(--primary-font-color);
+    font-family: var(--primary-font-family), sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+
+
+.main-nav ul li a:hover{
+    color: var(--secondary-hoover-font-color);
+}
+
+/* ---- Dropdown menus from main navigation bar ---- */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Apply inline style to dropdown menu without affecting dropdown menus */
+.main-nav .main-ul li:not(.dropdown) a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Dropdown content hidden by default */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top:10%; /* Align dropdown elements below the parent element */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    display: block;
+    padding: 2px 2px;
+    text-align: left;
+    text-decoration: none;
+    /*top:100%;*/
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #ddd;
+    padding: 2px;
+    border-radius: 7px;
+}
+
+/* nav menu dropdown icon */
+.dropdown-toggle-icon {
+    margin-left: 5px;
+}
+.dropdown-toggle-icon:hover {
+    color: var(--secondary-hoover-font-color);
+}
