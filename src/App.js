@@ -1,26 +1,38 @@
 import './App.css';
 import HeroImage from "./components/HeroImage";
-import SiteHeader from "./components/SiteHeader";
+import Header from "./components/Header";
 import BestCoffeeBrands from "./components/BestCoffeeBrands";
 import LearnIconsGrid from "./components/LearnIconsGrid";
 
-// General: code standards, best practices, weird things I did and how to do it better
-// Why I can't change the font weight ? siteHeader.css 40 font-weight: 400;
-// less hardcoded and more react
-// nav menu: how to change color on hoover of both the icon AND the text, not one or the other
+// --- To Make later ---
+// Redux, url paths, context or similar
+
+
+// --- technical debt ---
 // fix responsive issue in hero image, buttons and p getting cut in mobile
+    //padding in bot dir rather tahn margin
+
 // Adjust header widht: my content is full widht, theirs not
+    //max-width
+    //margin 0 auto = center
+
 // slide animation for mobile menu
 
-// continue
-// burger menu
+//button
+    // container margin 0 auto, maxwidht 80
+    // gap
+
+
+// responisve by css, not react
+// float not recommended
+
 
 
 export default function App() {
   return (
     <div className="App">
 
-      <SiteHeader />
+      <Header />
       <HeroImage />
       <BestCoffeeBrands />
       <LearnIconsGrid />
