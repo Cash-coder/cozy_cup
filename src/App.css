@@ -17,6 +17,11 @@ body {
     font-family: karla, sans-serif;
     font-size: 18px;
 }
+h2 {
+    text-align: center;
+    margin: 3em 3em;
+}
+
 .App {
   /*text-align: center;*/
 }
