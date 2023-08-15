@@ -4,11 +4,13 @@
     background-color: #fff;
     display: flex;
     justify-content: space-between;
+    max-width: 80%;  /* create white space on borders */
 }
 
  /* ---- Logo ---- */
  .site-logo img {
-    width: 5em;
+    width: 6em;
+    margin-left: 40px;
 }
 
 /* ---- Main navigation bar ---- */
@@ -225,4 +227,27 @@
 #menuToggle input:checked ~ ul
 {
     transform: none;
+}
+
+
+/* responsive */
+@media (max-width: 768px){
+
+    .site-header {
+        max-width: 100%;
+        width:100%
+    }
+    .site-logo img {
+    width: 5em;
+    }
+
+    .buttons-container {
+        flex-direction: column;
+        align-items:stretch; /* allow buttons to have the same width */
+    }
+    .hero-btn {
+        margin: 10px auto 0; /* Center buttons and separate them vertically */
+        width: 80%; /* same width for both buttons */
+        cursor: pointer;
+    }
 }

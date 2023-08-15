@@ -10,48 +10,34 @@
 }
 
 .grid-item-0 {
+    box-sizing: border-box;
     position: relative;
     z-index: 1;
 }
 
 .grid-item-1 {
+    box-sizing: border-box;
     position: relative;
     z-index: 2;
-}
-
-h1 {
-    font-family: 'Rubik', -apple-system, sans-serif;
-    font-weight: 700;
-    font-size: 4.5em;
-    /*color: #273338;*/
-    color: #805f55;
-    line-height: 1.2em;
-
-    box-sizing: border-box;
     width: 100%;
+    margin-left: 20px;
 }
+
 
 .hero-block {
     /*margin-left: 0;*/
     margin: 0 auto;
     box-sizing: border-box;
     max-width: 100%;
-    background-color: #e8e8e8;
+    background-color: #cbc8c8;
     padding: 60px 0 40px;
     position: relative;
     z-index: 1;
 }
 
-.grid-item-1 * {
-    box-sizing: border-box;
-    width: 100%;
-    margin-left: 20px;
-    /*max-width: 100%;*/
-}
-
 .hero-p {
-    color: #273338;
-    margin-bottom: 1.5em;
+    color: #fff;
+    margin: 2.5em 0;
     font-size: 1.5em;
     width: 100%;
     box-sizing: border-box;
@@ -74,7 +60,14 @@ h1 {
     height: auto;
 }
 
-/* Calls to Action */
+/* ---- Calls to Action ---- */
+
+.buttons-container {
+    display: flex;
+    /*width: 100%;*/
+    /*max-width: 100%;*/
+}
+
 .hero-btn {
     display: inline-flex;
     justify-content: center;
@@ -108,16 +101,17 @@ h1 {
     color: white;
 }
 
-.buttons-container {
-    display: flex;
-    width: 100%;
-    max-width: 100%;
-}
+
 
 /*  ---- Responsive ---- */
 @media (max-width: 768px) {
     .two-columns-container {
         grid-template-columns: 1fr;
+    }
+
+    .grid-item-1 {
+        padding: 20px 20px;
+        /*margin-left: unset;*/
     }
 
     .hero-block {
@@ -144,8 +138,9 @@ h1 {
         display: flex;
         flex-direction: column;
 
-        width: 100%;
-        max-width: 100%;
+        /*width: 100%;*/
+        /*max-width: 100%;*/
+        /*align-items: center;*/
     }
 
     .hero-btn {
@@ -160,8 +155,9 @@ h1 {
         margin-top: 10px;
         text-align: center;
         max-width: 100%;
-        /*margin-right: 25em;*/
-        padding: 15px;
+        /*margin-right: 5em;*/
+        /*padding: 15px;*/
+        padding: 20px 20px;
     }
 
     .hero-btn.insta {
@@ -169,8 +165,7 @@ h1 {
         display: block;
     }
 
-    h1 {
-        margin-left: 20px;
+    .grid-item-1 h1 {
         color: #f1eaea;
     }
 }

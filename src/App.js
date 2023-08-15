@@ -9,24 +9,12 @@ import LearnIconsGrid from "./components/LearnIconsGrid";
 
 
 // --- technical debt ---
-// fix responsive issue in hero image, buttons and p getting cut in mobile
-    //padding in bot dir rather tahn margin
 
-// Adjust header widht: my content is full widht, theirs not
-    //max-width
-    //margin 0 auto = center
-
+// --- possibles ---
 // slide animation for mobile menu
 
-//button
-    // container margin 0 auto, maxwidht 80
-    // gap
-
-
-// responisve by css, not react
-// float not recommended
-
-
+// --- resources ---
+// https://www.homegrounds.co/
 
 export default function App() {
   return (
