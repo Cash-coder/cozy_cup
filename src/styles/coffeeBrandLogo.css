@@ -1,8 +1,9 @@
 .featured-brands-container {
     display: block;
     width: 100%;
-    margin-top: 3em;
     overflow-x: hidden;
+    /*margin: 6em 0 ;*/
+    /*margin-top: 3em ;*/
     /*background-color: var(--h2-section-background-color);*/
     /*background-color: #fff;*/
 }
@@ -43,6 +44,10 @@
 @media (max-width: 768px) {
     .featured-brands-container {
         margin-top: 2em;
+        margin-bottom: 6em;
+    }
+    .featured-brands-container h2 {
+        margin: 1em 2em;
     }
 }
 

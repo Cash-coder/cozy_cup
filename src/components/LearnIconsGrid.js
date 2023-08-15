@@ -6,7 +6,7 @@ import Grid from './Grid';
 export default function LearnIconsGrid(){
 
   return (
-    <div>
+    <div id="learn-icons-div">
       <h2>What Do You Want To Learn ?</h2>
       <Grid
           data={data}

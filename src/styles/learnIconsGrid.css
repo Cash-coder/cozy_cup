@@ -1,8 +1,15 @@
+#lean-icons-div {
+}
+
 #learn-grid {
     display: grid;
-    /*grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));*/
-    grid-template-columns: repeat(3, 1fr);
+    box-sizing: border-box;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /*grid-template-columns: repeat(3, 1fr);*/
     justify-items: center;
+    width: 60%;
+    margin: 0 auto; /* center */
+
 }
 
 
@@ -14,6 +21,33 @@
     /*width: 27%;*/
     /*display: flex;*/
     /*flex-direction: column;*/
-    width:80%;
+    width:100%;
+    /*max-width: 100%;*/
     /*flex-wrap: wrap;*/
+    padding: 2vw ;
 }
+.learn-grid-item:hover {
+    filter: brightness(75%);  /* shadow on hoover */
+}
+
+.learn-grid-item h3 {
+    padding-bottom: 20px;
+    white-space: nowrap;
+
+}
+
+@media (max-width: 768px) {
+    #learn-grid {
+        /*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr ));*/
+        margin: 0 auto;
+        width: 100%;
+    }
+    .learn-grid-item {
+        padding: 5vw;
+    }
+    .learn-grid-item h3 {
+        white-space: normal;  /* allow break lines to fit text */
+        padding-top: 15px;
+    }
+}
+

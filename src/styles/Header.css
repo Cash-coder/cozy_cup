@@ -239,6 +239,7 @@
     }
     .site-logo img {
     width: 5em;
+        margin-left: 10px;
     }
 
     .buttons-container {

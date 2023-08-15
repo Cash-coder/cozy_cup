@@ -36,15 +36,11 @@ h2 {
     font-size: 30px;
 }
 
-.App {
-  /*text-align: center;*/
+@media (max-width: 768px) {
+    h2 {
+        margin: 2em 2em;
+    }
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 
 /*.App-header {*/
 /*  background-color: #282c34;*/

@@ -3,8 +3,8 @@ export default  ({ data, id, classes }) => {
         <div id={id}>
             {data.map((item, index) => (
                 <div key={index} className={classes.items} >
-                    <h3>{item.title}</h3>
                     <img src={item.image} alt={item.title} />
+                    <h3>{item.title}</h3>
                 </div>
             ))}
         </div>
