@@ -12,7 +12,7 @@ import LearnIconsGrid from "./components/LearnIconsGrid";
 // popular posts
 // most read guides
 // page subscribe
-// page coffee flavour wheel. accordeon faqs
+// page coffee flavour wheel. table of contents, accordeon faqs
 
 // --- technical debt ---
 // heroImage h1 and p getting cut below 1700px - width 97%

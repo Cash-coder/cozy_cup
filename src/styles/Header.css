@@ -100,9 +100,7 @@
     position: relative;
     top: 25px;
     margin-right: 40px;
-
     z-index: 3;
-
     -webkit-user-select: none;
     user-select: none;
 }

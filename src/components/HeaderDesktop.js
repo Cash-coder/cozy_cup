@@ -13,8 +13,8 @@ export default function HeaderDesktop() {
             <span className="dropdown dropdown-toggle-icon">
                   <FontAwesomeIcon icon={faChevronDown} />
             </span></a>
-          <div className="dropdown-content">
-            {menu.tools.submenuItems.map((subMenu) =>(
+          <div className="dropdown-content"> {
+            menu.tools.submenuItems.map((subMenu) =>(
               <a
                 key={subMenu.id}
                 href={subMenu.url}>
