@@ -4,15 +4,17 @@ import Header from "./components/Header";
 import BestCoffeeBrands from "./components/BestCoffeeBrands";
 import LearnIconsGrid from "./components/LearnIconsGrid";
 import SectionImageWithText from "./components/SectionImageWithText";
-import {whoWeAreData} from "./data/const";
+import {whoWeAreData, tableArticleThumbrowData} from "./data/const";
+import TableArticleThumbrow from "./components/TableArticleThumbrow";
+
+
 // --- To Make later ---
 // Redux, url paths, context or similar
 
 // --- continue ---
-// who are we
+// page subscribe
 // popular posts
 // most read guides
-// page subscribe
 // page coffee flavour wheel. table of contents, accordeon faqs
 
 // --- technical debt ---
@@ -26,14 +28,13 @@ import {whoWeAreData} from "./data/const";
 // icons home, rotate on hoover
 
 // --- resources ---
-// https://www.homegrounds.co/
+  // https://www.homegrounds.co/
 
 
 
 export default function App() {
   return (
     <div className="App">
-
       <Header />
       <HeroImage />
       <BestCoffeeBrands />
@@ -44,6 +45,9 @@ export default function App() {
         imageUrl={whoWeAreData.imageUrl}
         sectionClassname={'image-with-text'}
         sectionId={'whoAreWe'}
+      />
+      <TableArticleThumbrow
+        data={tableArticleThumbrowData}
       />
 
     </div>

@@ -1,0 +1,21 @@
+@import '../App.css';
+
+.table-article-thumbrow {
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+
+.thumbrow-article img {
+    height: 150px;
+}
+.thumbrow-article h5 {
+    margin: 10px 0 0 ;
+    font-size: 16px;
+    padding: 5px 15px 15px;
+    text-align:center;
+    color:rgb(214, 211, 205);
+}
+.thumbrow-article h5:hover {
+    color: var(--coffee-red-color);
+}

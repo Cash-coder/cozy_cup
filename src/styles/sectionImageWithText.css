@@ -31,19 +31,15 @@
     .image-with-text {
         display: inline-block;
         width: 100%;
-        /*margin: 2em 2em;*/
     }
 
     .image-with-text div {
         margin: 0 auto;
         width: 90%;
-        /*align-content: center;*/
-        /*justify-items: center;*/
     }
 
     .image-with-text h3, .image-with-text p{
         text-align:center;
-        /*text-justify: auto;*/
         padding-bottom: 2em;
     }
     .image-with-text div img {
