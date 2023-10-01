@@ -3,6 +3,7 @@ import HeroImage from "./components/HeroImage";
 import Header from "./components/Header";
 import BestCoffeeBrands from "./components/BestCoffeeBrands";
 import LearnIconsGrid from "./components/LearnIconsGrid";
+import WhoAreWe from "./components/WhoAreWe";
 
 // --- To Make later ---
 // Redux, url paths, context or similar
@@ -32,6 +33,7 @@ export default function App() {
       <HeroImage />
       <BestCoffeeBrands />
       <LearnIconsGrid />
+      <WhoAreWe />
 
     </div>
   );

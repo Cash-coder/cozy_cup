@@ -20,7 +20,7 @@ export default function HeaderMobile() {
         role="navigation"
         onBlur={() => {
           handleMenuToggle(); // hide menu
-          checkMenuCheckbox(); // transform menu burger icon to deactivated state
+          checkMenuCheckbox(); // transform menu burger icon to deactivated state (<input type="checkbox">)
         }}>
         <div id="menuToggle">
           <input type="checkbox" onClick={handleMenuToggle}/>
