@@ -3,7 +3,7 @@
 .table-article-thumbrow {
     display: flex;
     flex-wrap: wrap;
-    gap:10px;
+    gap:2em;
 }
 
 .thumbrow-article img {
@@ -11,11 +11,26 @@
 }
 .thumbrow-article h5 {
     margin: 10px 0 0 ;
-    font-size: 16px;
+    font-size:1.1em;
+    font-style: italic;
     padding: 5px 15px 15px;
     text-align:center;
-    color:rgb(214, 211, 205);
+    color: #594F4F;
 }
 .thumbrow-article h5:hover {
     color: var(--coffee-red-color);
+}
+
+@media (max-width: 768px){
+    .table-article-thumbrow {
+        justify-content: center;
+    }
+    .thumbrow-article {
+        margin: 0 auto;
+    }
+
+    .thumbrow-article h5{
+        font-size:1.1em;
+    }
+
 }

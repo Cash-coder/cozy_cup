@@ -8,7 +8,7 @@ export default function Header() {
   const isMobile = useMobileDetect();
 
   return (
-    <div className='site-header'>
+    <header className='site-header'>
       <div className="site-logo">
         <img
           src="https://static.vecteezy.com/system/resources/previews/000/585/220/large_2x/coffee-cup-logo-template-vector-icon-design.jpg"
@@ -18,6 +18,6 @@ export default function Header() {
 
       {isMobile ? <HeaderMobile /> : <HeaderDesktop/>}
 
-    </div>
+    </header>
   )
 }

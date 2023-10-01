@@ -25,3 +25,14 @@ export const tableArticleThumbrowData = [
     imgSrc: 'https://www.homegrounds.co/wp-content/uploads/2021/02/gifts-for-coffee-lovers.jpg',
   }
 ]
+
+export const footerMenuItems = [
+  {
+    title: 'contact us',
+    link: '#'
+  },
+  {
+    title: 'disclaimer',
+    link: '#'
+  }
+]
