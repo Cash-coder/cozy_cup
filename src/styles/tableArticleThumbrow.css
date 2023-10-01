@@ -6,6 +6,14 @@
     gap:2em;
 }
 
+.thumbrow-article {
+    background: #fff;
+    box-shadow: 0 1px 4px /* thin grey box borders */
+        rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow:hidden; /* hide img overflow from box */
+}
+
 .thumbrow-article img {
     height: 150px;
 }

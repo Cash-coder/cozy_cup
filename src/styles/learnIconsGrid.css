@@ -4,8 +4,7 @@
 #learn-grid {
     display: grid;
     box-sizing: border-box;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    /*grid-template-columns: repeat(3, 1fr);*/
+    grid-template-columns: repeat(3, 1fr); /* 3 columns with same width each */
     justify-items: center;
     width: 60%;
     margin: 0 auto; /* center */
@@ -17,37 +16,46 @@
     box-sizing: border-box;
     display: grid;
     justify-items: center;
-    /*flex-direction: column;*/
-    /*width: 27%;*/
-    /*display: flex;*/
-    /*flex-direction: column;*/
     width:100%;
-    /*max-width: 100%;*/
-    /*flex-wrap: wrap;*/
     padding: 2vw ;
+    transition: transform 0.3s ease;
 }
 .learn-grid-item:hover {
     filter: brightness(75%);  /* shadow on hoover */
+    transform: rotate(20deg);
 }
 
 .learn-grid-item h3 {
     padding-bottom: 20px;
     white-space: nowrap;
-
+}
+.learn-grid-item img{
+    width: 25%;
 }
 
+/* ---- for large monitors ----*/
+@media (min-width:1366px){
+    .learn-grid-item img {
+        width:20%;
+    }
+}
+
+/* ---- for smartphones ---- */
 @media (max-width: 768px) {
     #learn-grid {
-        /*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr ));*/
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr ));
         margin: 0 auto;
         width: 100%;
+
     }
-    .learn-grid-item {
-        gaps: 5vw;
-    }
+
     .learn-grid-item h3 {
         white-space: normal;  /* allow break lines to fit text */
         padding-top: 15px;
+    }
+
+    .learn-grid-item img{
+        width: 17%;
     }
 }
 

@@ -12,7 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none; /* for a links */
+    text-decoration: none; /* for underlined links */
 
 }
 
@@ -25,12 +25,11 @@ h1 {
     font-family: 'Rubik', -apple-system, sans-serif;
     font-weight: 700;
     font-size: 4.5em;
-    /*color: #273338;*/
-    color: #805f55;
     line-height: 1.2em;
-
-    box-sizing: border-box;
     width: 100%;
+    color: #805f55;
+    box-sizing: border-box;
+    /*color: #273338;*/
 }
 
 h2 {
@@ -39,26 +38,18 @@ h2 {
     font-size: 30px;
 }
 
+
+/* ---- large monitors ---- */
+@media (min-width:1366px) {
+    h2 {
+        font-size: 40px;
+    }
+}
+
+
+/* ---- smartphones ---- */
 @media (max-width: 768px) {
     h2 {
         margin: 2em 2em;
     }
 }
-
-/*.App-header {*/
-/*  background-color: #282c34;*/
-/*  min-height: 100vh;*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*  align-items: center;*/
-/*  justify-content: center;*/
-/*  font-size: calc(10px + 2vmin);*/
-/*  color: white;*/
-/*}*/
-
-/*@media (prefers-reduced-motion: no-preference) {*/
-/*  .App-logo {*/
-/*    animation: App-logo-spin infinite 20s linear;*/
-/*  }*/
-/*}*/
-

@@ -7,11 +7,13 @@
     max-width: 80%;  /* create white space on borders */
 }
 
+
  /* ---- Logo ---- */
  .site-logo img {
     width: 6em;
     margin-left: 40px;
 }
+
 
 /* ---- Main navigation bar ---- */
 .main-nav {
@@ -45,6 +47,7 @@
     color: var(--secondary-hoover-font-color);
 }
 
+
 /* ---- Dropdown menus from main navigation bar ---- */
 .dropdown {
     float: right;
@@ -57,12 +60,12 @@
     text-decoration: none;
 }
 
-/* Dropdown content hidden by default */
+/* Dropdown content (hidden by default) */
 .dropdown-content {
     display: none;
     position: absolute;
     z-index: 2;
-    top:5em; /* Align dropdown elements below the parent element */
+    top:3em; /* Align dropdown elements below the header */
 }
 
 /* Links inside the dropdown */
@@ -92,8 +95,28 @@
 }
 
 
-/* ---- burger menu mobile ---- */
+/* ---- for wide screens ---- */
+@media (min-width:1366px){
+    .site-header {
+        max-width: 50%;
+        margin: 0 auto;
+        padding: 2em;
+    }
+    .main-nav .main-ul li a {
+        font-size: 2em;
+        font-weight: 400;
+    }
+    .grid-item-1 {
+        margin-left: -100px;
+        margin-top: 100px;
+    }
+    .dropdown-content {
+        top: 7em; /* adjust dropdown content below header */
+    }
+}
 
+
+/* ---- burger menu mobile ---- */
 #menuToggle
 {
     display: block;

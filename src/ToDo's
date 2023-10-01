@@ -1,0 +1,27 @@
+// --- resources ---
+  // https://www.homegrounds.co/
+
+
+// --- technical debt ---
+// heroImage h1 and p getting cut below 1700px - width 97%
+// completar menús navegación
+- check logo size in wide screen vs laptop
+- home for 1366px
+
+
+/ --- To Make later ---
+// Redux, url paths, context or similar
+
+
+// --- continue ---
+// page subscribe
+// popular posts
+// most read guides
+// page coffee flavour wheel. table of contents, accordeon faqs
+
+
+
+// --- possibles ---
+// slide animation for mobile menu
+// what do you want to brew/roast/learn animation
+

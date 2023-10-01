@@ -41,6 +41,15 @@
     /*box-sizing: border-box;*/
 }
 
+/* ---- large monitors----*/
+@media (min-width:1366px){
+    .coffee-brand-logo {
+        max-width: 400px;
+    }
+}
+
+
+/* ---- smartphones ----*/
 @media (max-width: 768px) {
     .featured-brands-container {
         margin-top: 2em;
