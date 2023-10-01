@@ -2,6 +2,7 @@
 
 :root {
     --primary-font-color: black;
+    --coffee-red-color: #e6512b;
     --primary-font-family: Rubik;
     --secondary-hoover-font-color: #44ada8;
     --h2-section-background-color: #f2f5fa;
@@ -11,6 +12,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none; /* for a links */
+
 }
 
 body {

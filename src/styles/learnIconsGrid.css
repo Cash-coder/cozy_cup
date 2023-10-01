@@ -43,7 +43,7 @@
         width: 100%;
     }
     .learn-grid-item {
-        padding: 5vw;
+        gaps: 5vw;
     }
     .learn-grid-item h3 {
         white-space: normal;  /* allow break lines to fit text */

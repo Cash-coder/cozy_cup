@@ -3,8 +3,6 @@ import '../styles/coffeeBrandLogo.css';
 import coffeeBrandsLogos from '../data/coffeeBrandLogosData';
 export default function BestCoffeeBrands() {
 
-
-
   function getAlt(logoUrl) {
     const parsedURL = new URL(logoUrl)
     return parsedURL.hostname
