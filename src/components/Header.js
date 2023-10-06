@@ -1,3 +1,4 @@
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import '../styles/Header.css'
 import useMobileDetect from '../hooks/useMobileDetect';
 import HeaderDesktop from "./HeaderDesktop";
