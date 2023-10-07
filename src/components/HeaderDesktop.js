@@ -2,6 +2,7 @@ import menu from "../data/recepies";
 import React from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faChevronDown} from "@fortawesome/free-solid-svg-icons";
+import { Link } from 'react-router-dom';
 
 
 export default function HeaderDesktop() {
@@ -25,7 +26,7 @@ export default function HeaderDesktop() {
         </li>
         <li><a href="#">Coffee Beans</a></li>
         <li><a href="#">Gear</a></li>
-        <li><a href="#">Recipes</a></li>
+        <li><Link to={'/Recipes'}>Recipes</Link></li>
       </ul>
     </nav>
   );
