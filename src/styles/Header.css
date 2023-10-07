@@ -98,9 +98,13 @@
 /* ---- for wide screens ---- */
 @media (min-width:1366px){
     .site-header {
-        max-width: 50%;
+        max-width: 70%;
         margin: 0 auto;
         padding: 2em;
+    }
+    .site-logo img {
+        width: 7em;
+        margin-left: -200px;
     }
     .main-nav .main-ul li a {
         font-size: 2em;
@@ -179,17 +183,6 @@
     background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
     opacity 0.55s ease;
 }
-
-/* animations menu toggle */
-/*#menuToggle span:first-child*/
-/*{*/
-/*    transform-origin: 0% 0%;*/
-/*}*/
-
-/*#menuToggle span:nth-last-child(2)*/
-/*{*/
-/*    transform-origin: 0% 100%;*/
-/*}*/
 
 
 /* animation make an X after click burger menu */

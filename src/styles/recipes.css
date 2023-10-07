@@ -1,0 +1,17 @@
+.post-banner {
+    display:flex;
+    background-color: #ddefef;
+    text-align: center;
+}
+.post-image-container {
+    width:100%;
+}
+.post-text-container {
+    text-align:left;
+}
+.post-text-container h1 {
+    padding: 40px 0;
+}
+.post-text-container p {
+    font-size: 1.2em;
+}
