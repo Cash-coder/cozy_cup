@@ -34,5 +34,13 @@ export const footerMenuItems = [
   {
     title: 'disclaimer',
     link: '#'
-  }
+  },
+  {
+    title: 'privacy policy',
+    link: '#'
+  },
+  {
+    title: 'contact us',
+    link: '#'
+  },
 ]
