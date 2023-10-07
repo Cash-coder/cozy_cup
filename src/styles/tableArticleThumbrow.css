@@ -1,21 +1,23 @@
 @import '../App.css';
 
 .table-article-thumbrow {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /*flex-wrap: wrap;*/
     gap:2em;
+    margin: 4.5em 0;
 }
 
 .thumbrow-article {
     background: #fff;
-    box-shadow: 0 1px 4px /* thin grey box borders */
-        rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
     border-radius: 20px;
     overflow:hidden; /* hide img overflow from box */
 }
 
 .thumbrow-article img {
-    height: 150px;
+    /*height: 150px;*/
+    width: 100%;
 }
 .thumbrow-article h5 {
     margin: 10px 0 0 ;

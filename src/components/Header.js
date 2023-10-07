@@ -10,13 +10,14 @@ export default function Header() {
 
   return (
     <header className='site-header'>
-      <div className="site-logo">
-        <img
-          src="https://static.vecteezy.com/system/resources/previews/000/585/220/large_2x/coffee-cup-logo-template-vector-icon-design.jpg"
-          alt="site logo by vecteezy"
-        />
-      </div>
-
+      <a href="http://localhost:3000/home">
+        <div className="site-logo">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/000/585/220/large_2x/coffee-cup-logo-template-vector-icon-design.jpg"
+            alt="site logo by vecteezy"
+          />
+        </div>
+      </a>
       {isMobile ? <HeaderMobile /> : <HeaderDesktop/>}
 
     </header>

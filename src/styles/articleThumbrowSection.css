@@ -1,0 +1,13 @@
+.section-article-thumbrow {
+    width: 80%;
+    margin:0 auto;
+}
+.section-article-thumbrow h2 {
+    text-align: left;
+    margin: 0;
+}
+.section-article-thumbrow p {
+    margin-top: 1.5em;
+    font-size: 20px;
+    line-height:1.5;
+}

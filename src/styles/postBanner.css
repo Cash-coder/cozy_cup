@@ -2,6 +2,7 @@
     display:flex;
     background-color: #ddefef;
     text-align: center;
+    margin-bottom:5em;
 }
 .post-image-container {
     width:100%;

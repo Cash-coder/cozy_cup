@@ -1,4 +1,4 @@
-
+import '../styles/postBanner.css';
 
 export default function PostBanner({ img, text }) {
 
