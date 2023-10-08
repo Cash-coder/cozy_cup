@@ -3,7 +3,7 @@ import HeroImage from "../components/HeroImage";
 import BestCoffeeBrands from "../components/BestCoffeeBrands";
 import LearnIconsGrid from "../components/LearnIconsGrid";
 import SectionImageWithText from "../components/SectionImageWithText";
-import {tableArticleThumbrowData, whoWeAreData} from "../data/const";
+import {HomeTableArticleThumbrowData, whoWeAreData} from "../data/const";
 import TableArticleThumbrow from "../components/TableArticleThumbrow";
 import Footer from "../components/Footer";
 
@@ -24,7 +24,8 @@ export default function Home(){
           sectionId={'whoAreWe'}
         />
         <TableArticleThumbrow
-          data={tableArticleThumbrowData}
+          id="home-article-thumbrow"
+          data={HomeTableArticleThumbrowData}
         />
       </main>
       <Footer/>

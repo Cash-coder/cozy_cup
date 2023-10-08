@@ -1,11 +1,13 @@
-import tableArticleThumbrow from '../styles/tableArticleThumbrow.css';
+import '../styles/tableArticleThumbrow.css';
 
-export default function TableArticleThumbrow({ data }) {
+export default function TableArticleThumbrow({ data, dynamicId }) {
   return (
-    <div style={{ display:'flex', justifyContent: 'center'}}>
+    <div id={dynamicId || undefined}>
       <div className="table-article-thumbrow">
         {data.map((item, index) => (
-          <div className='thumbrow-article' key={index}>
+          <div
+            className='thumbrow-article'
+            key={index}>
             <a href={item.href || '#'}>
               <img
                 src={item.imgSrc}

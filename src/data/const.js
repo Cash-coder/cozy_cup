@@ -4,7 +4,7 @@ export const whoWeAreData = {
   imageUrl: "https://www.homegrounds.co/wp-content/uploads/2023/07/brista-pouring-coffee.jpg",
 }
 
-export const tableArticleThumbrowData = [
+export const HomeTableArticleThumbrowData = [
   {
     title: 'grind coffee testing',
     imgSrc: 'https://www.homegrounds.co/wp-content/uploads/2023/08/a-group-photo-of-grinders.avif',
@@ -44,3 +44,81 @@ export const footerMenuItems = [
     link: '#'
   },
 ]
+
+export const recipesCoffeeMilkData = [
+  {
+    title: 'Cafe Au Lait',
+    imgSrc: 'https://www.homegrounds.co/wp-content/uploads/2023/03/cafe-au-lait-.jpeg',
+  },
+  {
+    title: 'Café Late',
+    imgSrc: 'https://www.homegrounds.co/wp-content/uploads/2019/09/latte-coffee-recipe.jpeg',
+  },
+  {
+    title: 'Café Con Leche',
+    imgSrc: 'https://www.homegrounds.co/wp-content/uploads/2022/07/spanish-latte-.jpeg',
+  },
+  {
+    title: 'Cappuccino',
+    imgSrc: 'https://www.homegrounds.co/wp-content/uploads/2022/03/cappuccino-recipe.jpeg',
+  },
+  {
+    title: 'Cortado',
+    imgSrc: 'https://www.homegrounds.co/wp-content/uploads/2019/10/cortado-coffee-.jpeg',
+  },
+  {
+    title: 'Latte Macchiato',
+    imgSrc: 'https://www.homegrounds.co/wp-content/uploads/2022/03/latte-macchiato.jpeg',
+  },
+  {
+    title: 'Mocha',
+    imgSrc: 'https://www.homegrounds.co/wp-content/uploads/2022/04/mocha-coffee.jpeg',
+  },
+  {
+    title: 'Macchiato',
+    imgSrc: 'https://www.homegrounds.co/wp-content/uploads/2021/04/how-to-make-a-macchiato.jpeg',
+  }
+]
+
+export const recipesBlackData = [
+  {
+    title: 'Americano',
+    imgSrc: 'https://www.homegrounds.co/wp-content/uploads/2019/08/coffee-americano-recipe.jpg'
+  },
+  {
+    title: 'Cold Brew',
+    imgSrc: 'https://www.homegrounds.co/wp-content/uploads/2021/07/Cold-brew-coffee-in-a-bottle-and-a-glass.jpg'
+  },
+  {
+    title: 'Long Black',
+    imgSrc: 'https://www.homegrounds.co/wp-content/uploads/2022/05/long-black-coffee.jpg'
+  },
+  {
+    title: 'Lungo',
+    imgSrc: 'https://www.homegrounds.co/wp-content/uploads/2022/04/cafe-lungo-recipe.jpg'
+  },
+  {
+    title: 'Ristretto',
+    imgSrc: 'https://www.homegrounds.co/wp-content/uploads/2022/04/ristretto-recipe.jpg'
+  },
+]
+
+export const recipesDessertData = [
+  {
+    title: 'Affogato',
+    imgSrc: 'https://www.homegrounds.co/wp-content/uploads/2022/04/affogato-recipe.jpeg'
+  },
+  {
+    title: 'Coffee Cakes',
+    imgSrc: 'https://www.homegrounds.co/wp-content/uploads/2023/05/coffee-cake-recipes.jpeg'
+  },
+  {
+    title: 'Coffee Ice Cream',
+    imgSrc: 'https://www.homegrounds.co/wp-content/uploads/2023/05/coffee-ice-cream-recipe.jpeg'
+  },
+  {
+    title: 'Coffee Flavored Chocolate',
+    imgSrc: 'https://www.homegrounds.co/wp-content/uploads/2023/05/coffee-flavored-chocolate-recipe.jpeg'
+  },
+]
+
