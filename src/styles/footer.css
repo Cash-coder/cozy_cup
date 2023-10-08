@@ -86,3 +86,7 @@
     color: #e6512b;
     text-decoration: underline;
 }
+
+@media (max-width: 768px){
+
+}
