@@ -22,6 +22,7 @@
 .footer-contact {
     width:100%;
     max-width:605px;
+    padding-left: 1em;
 }
 
 .footer-buttons {
@@ -44,10 +45,17 @@
     /*margin-right: 5em;*/
     white-space: nowrap;
 }
-
+.footer-btn:hover{
+    background-color: unset;
+    color: #e6512b;
+}
 #footer-btn-2 {
     background-color: unset;
     margin-left:1em;
+}
+#footer-btn-2:hover{
+    background-color: unset;
+    color: #594F4F;
 }
 
 .footer-hero img {

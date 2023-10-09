@@ -1,4 +1,4 @@
-import {Header, PostBanner, ArticleThumbrowSection} from '../index';
+import {Header, Footer, PostBanner, ArticleThumbrowSection} from '../index';
 import {recipesCoffeeMilkData, recipesBlackData, recipesDessertData} from "../data/const";
 
 export default function Recipes(){
@@ -31,6 +31,7 @@ export default function Recipes(){
                   Try a coffee cake, coffee brownie, or coffee profiterole for the perfect breakfast pairing. Feeling fancy? How about coffee macarons, a mocha meringue pie, or an authentic Italian tiramisu? On a hot day, enjoy an affogato, cold brew popsicle, or coffee semifreddo. We’ve got tried-and-tested recipes for them all!'
         gridData={recipesDessertData}
         />
+      <Footer />
     </>
   )
 }
