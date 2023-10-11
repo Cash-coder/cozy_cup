@@ -122,3 +122,56 @@ export const recipesDessertData = [
   },
 ]
 
+export const articleTableData = [
+  {
+    title: 'atlas coffee club',
+    textBanner: 'best "world coffee tour"',
+    bulletPoints: ['arabica', 'varius origins', 'varius tasting notes'],
+    prodImg: 'https://www.homegrounds.co/wp-content/uploads/2023/07/Atlas-coffee-club-3-bags-on-the-table.jpg',
+    brandImg: 'https://www.homegrounds.co/wp-content/uploads/2019/08/atlas-coffee-club.jpg' ,
+    textButton: 'get $10 off',
+  },
+  ]
+//   {
+//     title: '',
+//     textBanner: '',
+//     bulletPoints: ['', ''],
+//     brandImg: '',
+//     textButton: '',
+//   },
+//   {
+//     title: '',
+//     textBanner: '',
+//     bulletPoints: ['', ''],
+//     brandImg: '',
+//     textButton: '',
+//   },
+//   {
+//     title: '',
+//     textBanner: '',
+//     bulletPoints: ['', ''],
+//     brandImg: '',
+//     textButton: '',
+//   },
+//   {
+//     title: '',
+//     textBanner: '',
+//     bulletPoints: ['', ''],
+//     brandImg: '',
+//     textButton: '',
+//   },
+//   {
+//     title: '',
+//     textBanner: '',
+//     bulletPoints: ['', ''],
+//     brandImg: '',
+//     textButton: '',
+//   },
+//   {
+//     title: '',
+//     textBanner: '',
+//     bulletPoints: ['', ''],
+//     brandImg: '',
+//     textButton: '',
+//   },
+// ]

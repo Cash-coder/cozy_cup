@@ -1,7 +1,5 @@
 import './App.css';
-
-import Home from './pages/Home';
-import Recipes from "./pages/Recipes";
+import { Home, Recipes, CoffeeBeans } from "./index";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 export default function App() {
@@ -11,6 +9,7 @@ export default function App() {
         <Routes>
           <Route path='/home' element={<Home />} />
           <Route path='/recipes' element={<Recipes />} />
+          <Route path='/coffee-beans' element={<CoffeeBeans />} />
         </Routes>
       </BrowserRouter>
     </div>

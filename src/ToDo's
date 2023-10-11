@@ -5,10 +5,10 @@
 // --- technical debt ---
 // heroImage h1 and p getting cut below 1700px - width 97%
 // completar menús navegación
-- check logo size in wide screen vs laptop
+- check logoA size in wide screen vs laptop
 - home for 1366px
     -medium screen != wide screen
--round cornders who we are pic
+-round cornders who we are Pic
 
 
 / --- To Make later ---

@@ -23,7 +23,7 @@ export default function Footer () {
       <div className="footer-wrapper">
         <div className="footer-hero">
           <div className="footer-contact">
-            <h4>Ready to elevate your coffee quality?</h4>
+            <h4>Ready to elevate your coffee quality ?</h4>
             <div className="footer-buttons">
               <a className="footer-btn" href="#">SIGN UP FOR FREE</a>
               <a className="footer-btn" id="footer-btn-2" href="#">COFFEE GUIDES</a>

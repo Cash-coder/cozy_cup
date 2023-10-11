@@ -33,15 +33,17 @@
 
 @media (max-width: 768px){
     .table-article-thumbrow {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
         justify-content: center;
+        margin: 3.5em 0;
+        gap:1em;
     }
     .thumbrow-article {
         margin: 0 auto;
     }
 
     .thumbrow-article h5{
-        font-size:1.1em;
+        font-size:1.4em;
     }
 
 }
