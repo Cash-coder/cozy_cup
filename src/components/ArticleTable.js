@@ -2,16 +2,21 @@ import '../styles/articleTable.css';
 
 // title, textBanner, bulletPoints, brandImg, textButton
 export default function ArticleTable( {
-    title, productTableData }) {
+    title, tableTitle, productTableData }) {
   return (
     <section className="article-table">
       <h2>{title}</h2>
       <table>
         <tbody>
+        <tr className="tableHead">
+          <th className="tableHeadTitle">
+            {tableTitle}
+          </th>
+        </tr>
         {productTableData.map((product, index) => (
           <tr key={index}>
             <td className="nameTd">
-              {product.title}
+              <span>{product.title}</span>
             </td>
             <td className="imgTd">
               <span>{product.textBanner}</span>
@@ -35,6 +40,7 @@ export default function ArticleTable( {
                 />
                 <a className="innerButtonTd"
                   href="#">
+                  {product.textButton}
                 </a>
               </div>
             </td>

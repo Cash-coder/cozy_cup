@@ -9,7 +9,7 @@
 - home for 1366px
     -medium screen != wide screen
 -round cornders who we are Pic
-
+-quitar margins a los h2 en app.css
 
 / --- To Make later ---
 // Redux, url paths, context or similar

@@ -5,6 +5,7 @@ export default function CoffeeBeans(){
   return (
     <ArticleTable
       title="best coffe beans in the world"
+      tableTitle="Product table"
       productTableData={articleTableData}
     />
   )
