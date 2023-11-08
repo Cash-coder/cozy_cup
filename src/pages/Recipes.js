@@ -1,10 +1,10 @@
 import {Header, Footer, PostBanner, ArticleThumbrowSection} from '../index';
 import {recipesCoffeeMilkData, recipesBlackData, recipesDessertData} from "../data/const";
+import Layout from "./Layout";
 
 export default function Recipes(){
   return (
-    <>
-      <Header />
+    <Layout>
       <PostBanner
         img={{
           src: "https://www.homegrounds.co/wp-content/uploads/2023/08/Recipes-homepgae-banner.webp",
@@ -31,7 +31,6 @@ export default function Recipes(){
                   Try a coffee cake, coffee brownie, or coffee profiterole for the perfect breakfast pairing. Feeling fancy? How about coffee macarons, a mocha meringue pie, or an authentic Italian tiramisu? On a hot day, enjoy an affogato, cold brew popsicle, or coffee semifreddo. We’ve got tried-and-tested recipes for them all!'
         gridData={recipesDessertData}
         />
-      <Footer />
-    </>
+    </Layout>
   )
 }

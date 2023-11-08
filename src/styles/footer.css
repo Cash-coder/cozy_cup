@@ -5,8 +5,8 @@
     /*display:block;*/
 }
 .footer-wrapper {
-    width:100%;
-    max-width: 1230px;
+    width:80%;
+    max-width: 1800px;
     margin-right:auto;
     margin-left: auto;
     padding-left:15px;
@@ -17,12 +17,11 @@
     display: flex;
     flex-direction:row;
     align-items:center;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
 }
 .footer-contact {
     width:100%;
     max-width:605px;
-    padding-left: 1em;
 }
 
 .footer-buttons {
@@ -62,7 +61,8 @@
     /*clip-path: inset(30% 34% 0 35%); !*cut the image *!*/
     width:auto;
     height:200px;
-    margin-right: 50px;
+    /*margin-right: 50px;*/
+    margin-left: 15%;
 }
 .footer-contact h4 {
     font-size: 2.2em;
@@ -74,8 +74,14 @@
 .footer-nav {
     display: flex;
     flex-wrap: wrap;
-    text-align: right;
     padding: 0;
+    margin-right: -5%;
+    box-sizing: border-box;
+}
+
+.container-widgets {
+    display: flex;
+
 }
 #footer-widgets {
     list-style: none;
@@ -114,6 +120,9 @@
     }
     .footer-hero {
         flex-direction: column;
+    }
+    .footer-contact{
+        box-sizing: border-box;
     }
     .footer-contact h4 {
         white-space: unset;

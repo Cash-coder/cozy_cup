@@ -19,7 +19,6 @@ export default function Header() {
         </div>
       </a>
       {isMobile ? <HeaderMobile /> : <HeaderDesktop/>}
-
     </header>
   )
 }

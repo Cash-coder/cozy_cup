@@ -7,7 +7,7 @@ export default function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='/home' element={<Home />} />
+          <Route path='/' element={<Home />} />
           <Route path='/recipes' element={<Recipes />} />
           <Route path='/coffee-beans' element={<CoffeeBeans />} />
         </Routes>

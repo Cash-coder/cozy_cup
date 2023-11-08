@@ -6,12 +6,11 @@ import SectionImageWithText from "../components/SectionImageWithText";
 import {HomeTableArticleThumbrowData, whoWeAreData} from "../data/const";
 import TableArticleThumbrow from "../components/TableArticleThumbrow";
 import Footer from "../components/Footer";
-
+import Layout from "./Layout";
 
 export default function Home(){
   return (
-    <>
-      <Header />
+    <Layout>
       <main>
         <HeroImage />
         <BestCoffeeBrands />
@@ -28,7 +27,6 @@ export default function Home(){
           data={HomeTableArticleThumbrowData}
         />
       </main>
-      <Footer/>
-    </>
+    </Layout>
   )
 }

@@ -13,7 +13,8 @@ export default function HeaderDesktop() {
           <a className='dropdown'>Tools
             <span className="dropdown dropdown-toggle-icon">
                   <FontAwesomeIcon icon={faChevronDown} />
-            </span></a>
+            </span>
+          </a>
           <div className="dropdown-content"> {
             menu.tools.submenuItems.map((subMenu) =>(
               <a
@@ -24,7 +25,7 @@ export default function HeaderDesktop() {
             ))}
           </div>
         </li>
-        <li><a href="#">Coffee Beans</a></li>
+        <li><a href="/coffee-beans">Coffee Beans</a></li>
         <li><a href="#">Gear</a></li>
         <li><Link to={'/Recipes'}>Recipes</Link></li>
       </ul>

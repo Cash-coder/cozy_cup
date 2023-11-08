@@ -65,14 +65,21 @@
     display: none;
     position: absolute;
     z-index: 2;
-    top:3em; /* Align dropdown elements below the header */
+    /*top:100%;*/
+    /*overflow: hidden;*/
+    margin-top: -1rem;
+
+    /*opacity: 0;*/
+    /*transition: opacity 0.3s ease;*/
 }
+
+/* Align dropdown elements below the header */
 
 /* Links inside the dropdown */
 .dropdown-content a {
     float: none;
     display: block;
-    padding: 2px 2px;
+    padding: 1rem 1rem;
     text-align: left;
     text-decoration: none;
     /*top:100%;*/
@@ -84,6 +91,12 @@
     background-color: #ddd;
     padding: 2px;
     border-radius: 7px;
+
+    opacity: 1;
+}
+
+.dropdown:hover {
+    transition-delay: 1.4s;
 }
 
 /* nav menu dropdown icon */

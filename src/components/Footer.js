@@ -5,22 +5,25 @@ export default function Footer () {
 
   const FooterItems = () => (
     <div className="footer-nav">
-      <ul id="footer-widgets">
-        {footerMenuItems.map((item, index) =>
-          <li key={index}>
-            <a
-              href={item.link}>
-              {item.title}
-            </a>
-          </li>)}
-      </ul>
+      <div className="container-widgets">
+        <ul id="footer-widgets">
+          {footerMenuItems.map((item,
+                                index) =>
+            <li key={index}>
+              <a
+                href={item.link}>
+                {item.title}
+              </a>
+            </li>)}
+        </ul>
+      </div>
     </div>
   )
 
   return (
     <footer className="footer">
-      <FooterItems />
       <div className="footer-wrapper">
+        <FooterItems />
         <div className="footer-hero">
           <div className="footer-contact">
             <h4>Ready to elevate your coffee quality ?</h4>

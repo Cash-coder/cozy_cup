@@ -5,6 +5,13 @@
 // --- technical debt ---
 // heroImage h1 and p getting cut below 1700px - width 97%
 // completar menús navegación
+- alignment home logos, wide screen, css for 3 screens
+- change em for rem
+- add this to make responsive better, public/index.html
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+- media queries with logical ops, and orientation portrait, landscape, test in chrome
+- apply Sass
+-transform to kebab-case ie:tableHead table-head
 - check logoA size in wide screen vs laptop
 - home for 1366px
     -medium screen != wide screen
