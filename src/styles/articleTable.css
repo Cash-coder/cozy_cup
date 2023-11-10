@@ -1,44 +1,67 @@
-.article-table {
-    margin: 20px 0 20px 0;
-}
-.article-table tr {
-    display: flex;
-    flex-direction:column;
-    text-align: center;
-}
-.article-table h2 {
-    text-transform: capitalize;
-    text-align: left;
-    margin:0.85em 0;
-    font-size:2.2em;
-    font-weight:1200;
-}
-.article-table table {
-    width:100%;
-    border: 1px solid #DCDCDC;
-    border-spacing: 0;
-    border-collapse:collapse;
-}
-.tableHead {
-    background-color: #494949;
-    text-transform: uppercase;
-    padding: 7px 7px;
-}
-.tableHead th {
-    padding: 5px 0;
-    line-height: 1.2em;
-    font-weight: 700;
-}
-.tableHeadTitle {
-    display: block;
-    text-align:center;
-    width:100%;
-}
+@media (max-width:768px) {
+    .article-table {
+        margin: 20px 0 20px 0;
+    }
+    .article-table tr {
+        display: flex;
+        flex-direction:column;
+        text-align: center;
+    }
+    .article-table h2 {
+        text-transform: capitalize;
+        text-align: left;
+        margin:0.85em 0;
+        font-size:2.2em;
+        font-weight:1200;
+    }
+    .article-table table {
+        width:100%;
+        border: 1px solid #DCDCDC;
+        border-spacing: 0;
+        border-collapse:collapse;
+    }
+    .tableHead {
+        background-color: #494949;
+        text-transform: uppercase;
+        padding: 7px 7px;
+    }
+    .tableHead th {
+        padding: 5px 0;
+        line-height: 1.2em;
+        font-weight: 700;
+    }
+    .tableHeadTitle {
+        display: block;
+        text-align:center;
+        width:100%;
+    }
+    .nameTd span{
+        display: block;
+        text-transform:uppercase;
+        font-size:1.4em;
+        padding: 50px;
+        line-height: 24px;
+    }
 
-.nameTd span{
-    display: block;
-    text-transform:uppercase;
-    font-size:1.4em;
-    padding: 50px;
-    line-height: 24px;
+    .imgTd {
+        /* combine img and span text in 1 container */
+        display: flex;
+        flex-direction: column;
+        width:80%;
+        margin: 0 auto;
+    }
+    .imgTd span {
+        background-color: rgb(3, 142, 135);
+        padding:0.5rem;
+        text-transform:uppercase;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .imgTd img {
+        height: 50%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        margin-bottom: 2rem;
+    }
+
 }
