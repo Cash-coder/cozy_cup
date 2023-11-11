@@ -1,4 +1,4 @@
-import '../styles/articleTable.css';
+import '../styles/articleTable.sass';
 
 // title, textBanner, bulletPoints, brandImg, textButton
 export default function ArticleTable( {
@@ -25,10 +25,16 @@ export default function ArticleTable( {
                 alt={product.title}/>
             </td>
             <td className="listTd">
-              <ul>
+              <ul className="listTd__ul">
                 {product.bulletPoints.map((
                   point, index) => (
-                  <li key={index}>{point}</li>
+                  <div key={index}>
+                    <img
+                      className="listTd__ul__img"
+                      src="https://www.homegrounds.co/wp-content/uploads/2020/01/check-icon-e1580116975395.png"
+                    />
+                    {point}
+                  </div>
                 ))}
               </ul>
             </td>
